@@ -9,7 +9,6 @@
     <title>CICS ORGANIZATION</title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/bb.ico">
     <link rel="stylesheet" href="css/index.css">
-
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -45,22 +44,22 @@
             <div class="col-md-3 mx-5 mb-3">
                 <!-- Column 1 -->
                 <br><img src="./index-img/award.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>95% Accreditation Success</h5>
+                <h5 class="accentText text-center"><br>1</h5>
             </div>
             <div class="col-md-3 mx-4 mb-3">
                 <!-- Column 2 -->
                 <br><img src="./index-img/abroad.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>93% Employed Abroad</h5>
+                <h5 class="accentText text-center"><br>2</h5>
             </div>
             <div class="col-md-3 mx-4 mb-3">
                 <!-- Column 3 -->
                 <br><img src="./index-img/local.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>98% Employed Locally</h5>
+                <h5 class="accentText text-center"><br>3</h5>
             </div>
             <div class="col-md-3 mx-5 mb-3">
                 <!-- Column 4 -->
                 <br><img src="./index-img/people.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>250+ Currently Enrolled</h5>
+                <h5 class="accentText text-center"><br>4</h5>
             </div>
         </div>
     </div>

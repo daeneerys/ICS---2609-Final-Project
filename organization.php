@@ -1,4 +1,5 @@
 <?php include_once "header.php" ?>
+
 <!DOCTYPE html>
 
 <head>
@@ -16,43 +17,44 @@
 <body>
 
     <div class="main_container container-fluid">
-        <div class="row">
+        <div class="row row_organization">
             <div class="col col-md-4">
                 <div class="card">
-                    <img class="card_img" src="assets/housekeeping.jpg" class="card-img-top" alt="House Keeping NC II">
+                    <img class="card_img" src="assets/Cnag.jpg" class="card-img-top" alt="CNAG">
                     <div class="card-body">
-                        <h5 class="title card-title">HOUSEKEEPING NCII</h5>
-                        <div class=time_container>
-                            <i style="font-size:18px" class="fa">&#xf017;</i>
-                            <p class="time">436 hours (55 days)</p>
+                        <h5 class="title card-title">UST CNAG - CICS </h5>
+                        <div class="facebook_container">
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href="https://www.facebook.com/cnagics">
+                                <p class="facebook">CNAG </p>
+                            </a>
                         </div>
-                        <div class=money_container>
-                            <i class="fa" style="font-size:18px">&#xf0d6</i>
-                            <p class="money">PHP 15,000</p>
+                        <div class="mail_container">
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                            <p class="mail">cnag.cics@ust.edu.ph</p>
                         </div>
-                        <p class="desc card-text">The HOUSEKEEPING NC II Qualification consists of competencies that a person must achieve to prepare guest rooms, clean public areas and equipment, provide housekeeping services,
-                            provide valet services, handle intoxicated guest, and laundry linen and guest clothes to a range of accommodation services.
+                        <p class="desc card-text"> UST CNAG-CICS is the Official Cisco Organization for the College of Information & Computing Sciences.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4">
                 <div class="card">
-                    <img class="card_img" src="assets/BPastry.jpeg" class="card-img-top" alt="House Keeping NC II">
+                    <img class="card_img" src="assets/Comelec.jpg" class="card-img-top" alt="COMELEC">
                     <div class="card-body">
-                        <h5 class="title card-title">BREAD & PASTRY PRODUCTION NCII</h5>
-                        <div class=time_container>
-                            <i style="font-size:18px" class="fa">&#xf017;</i>
-                            <p class="time">141 hours (18 days)</p>
+                        <h5 class="title card-title">UST ICS Commission on Elections </h5>
+                        <div class="facebook_container">
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href="https://www.facebook.com/USTICSComelec">
+                                <p class="facebook">Comelec CICS</p>
+                            </a>
                         </div>
-                        <div class=money_container>
-                            <i class="fa" style="font-size:18px">&#xf0d6</i>
-                            <p class="money">PHP 15,000</p>
+                        <div class="mail_container">
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                            <p class="mail">
+                                comelec.cics@ust.edu.ph</p>
                         </div>
-                        <p class="desc card-text">The BREAD AND PASTRY PRODUCTION NC II Qualification consists of competencies
-                            that person must achieve to be able to clean equipment , tools and utensils and prepare, portion and
-                            plate pastries, breads and other dessert items to guests in hotels, motels, restaurants, clubs, canteens,
-                            resorts and luxury lines/cruises and other related operations.
+                        <p class="desc card-text">The UST ICS COMELEC is a governing body that promotes honest and clean election-related matters in the Institute of Information and Computing Sciences.
                         </p>
                     </div>
                 </div>
@@ -60,20 +62,21 @@
 
             <div class="col col-md-4">
                 <div class="card">
-                    <img class="card_img" src="assets/Tourists.jpeg" class="card-img-top" alt="House Keeping NC II">
+                    <img class="card_img" src="assets/Css.jpg" class="card-img-top" alt="CSS">
                     <div class="card-body">
-                        <h5 class="title card-title">TOURISM PROMOTIONS SERVICES NC III</h5>
-                        <div class=time_container>
-                            <i style="font-size:18px" class="fa">&#xf017;</i>
-                            <p class="time">76 hours (10 days)</p>
+                        <h5 class="title card-title">UST Computer Science Society
+                        </h5>
+                        <div class=facebook_container>
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href="https://www.facebook.com/USTCSS">
+                                <p class="facebook">CSS</p>
+                            </a>
                         </div>
-                        <div class=money_container>
-                            <i class="fa" style="font-size:18px">&#xf0d6</i>
-                            <p class="money">PHP 15,000</p>
+                        <div class=mail_container>
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                            <p class="mail">css.cics@ust.edu.ph</p>
                         </div>
-                        <p class="desc card-text">The TOURISM PROMOTION SERVICES NC II Qualification consists of competencies that
-                            a person must achieve to advocate and sell tourism destination, products and services through technology-based
-                            information gathering and application of sales and promotions principles and techniques.
+                        <p class="desc card-text">The UST Computer Science Society (UST-CSS) is the mother and academic organization of the department of computer science of UST-CICS. 
                         </p>
                     </div>
                 </div>
@@ -81,44 +84,78 @@
 
 
             <!--SECOND ROW-->
-            <div class="col col-md-6">
+            <div class="col col-md-4">
                 <div class="card">
-                    <img class="card_img" src="assets/slaughtering.png" class="card-img-top" alt="House Keeping NC II">
+                    <img class="card_img" src="assets/Iss.jpg" class="card-img-top" alt="ISS">
                     <div class="card-body">
-                        <h5 class="title card-title">SLAUGHTERING OPERATIONS (SWINE) NC II</h5>
-                        <div class=time_container>
-                            <i style="font-size:18px" class="fa">&#xf017;</i>
-                            <p class="time">280 hours (35 days)</p>
+                        <h5 class="title card-title">UST - Information Systems Society </h5>
+                        <div class=facebook_container>
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href = "https://www.facebook.com/UST.ISSociety"><p class="facebook">ISS</p></a>
                         </div>
-                        <div class=money_container>
-                            <i class="fa" style="font-size:18px">&#xf0d6</i>
-                            <p class="money">PHP 15,000</p>
+                        <div class=mail_container>
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                            <p class="mail">iss.cics@ust.edu.ph</p>
                         </div>
-                        <p class="desc card-text">The SLAUGHTERING OPERATIONS (SWINE) NC II Qualification consists of competencies that
-                            a person must achieve in performing slaughtering floor operations from initial preparation of swine through
-                            splitting of the carcass.
+                        <p class="desc card-text">An academic organization for students taking up Information Systems in the University of Santo Tomas. ISS is dedicated in the dissemination of knowledge and enhancing the talents of its members.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col col-md-6">
+            <div class="col col-md-4">
                 <div class="card">
-                    <img class="card_img" src="assets/trainers methodology.png" class="card-img-top" alt="House Keeping NC II">
+                    <img class="card_img" src="assets/Pax.jpg" class="card-img-top" alt="Pax Romana">
                     <div class="card-body">
-                        <h5 class="title card-title">TRAINERS METHODOLOGY LEVEL I</h5>
-                        <div class=time_container>
-                            <i style="font-size:18px" class="fa">&#xf017;</i>
-                            <p class="time">234 hours (33 days)</p>
+                        <h5 class="title card-title">UST Pax Romana - ICS Unit </h5>
+                        <div class=facebook_container>
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href = "https://www.facebook.com/paxromanaiics"><p class="facebook">Pax Romana</p></a>
                         </div>
-                        <div class=money_container>
-                            <i class="fa" style="font-size:18px">&#xf0d6</i>
-                            <p class="money">PHP 15,000</p>
+                        <div class=mail_container>
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                            <p class="mail">paxromana.cics@ust.edu.ph</p>
                         </div>
-                        <p class="desc card-text">The TRAINERS METHODOLOGY LEVEL I consists of competencies a TVET trainer performing
-                            functions of trainer and assessor must achieve. A TVET trainer is a person who
-                            enables a learner or a group of learners to develop competencies to performing a
-                            particular trade or technical work.
+                        <p class="desc card-text"> The UST PAX ROMANA is a religous organization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-4">
+                <div class="card">
+                    <img class="card_img" src="assets/Site.jpg" class="card-img-top" alt="Site">
+                    <div class="card-body">
+                        <h5 class="title card-title">UST SITE - CICS: Society of Information Technology Enthusiasts  </h5>
+                        <div class=facebook_container>
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href = "https://www.facebook.com/site.ust"><p class="facebook">UST SITE - CICS</p></a>
+                        </div>
+                        <div class=mail_container>
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                            <p class="mail">site.cics@ust.edu.ph</p>
+                        </div>
+                        <p class="desc card-text"> UST SITE - CICS: Society of Information Technology Enthusiasts is the mother organization of the IT students of the University of Santo Tomas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Row -->
+            <div class="col col-md-4">
+                <div class="card">
+                    <img class="card_img" src="assets/Tgs.jpg" class="card-img-top" alt="TGS">
+                    <div class="card-body">
+                        <h5 class="title card-title">UST Thomasian Gaming Society</h5>
+                        <div class=facebook_container>
+                            <i style="font-size:18px" class="fa">&#xf230;</i>
+                            <a href = "https://www.facebook.com/ThomasianGamingSociety"><p class="facebook">Thomasian Gaming Society</p></a>
+                        </div>
+                        <div class=mail_container>
+                            <i class="fa" style="font-size:18px">&#xf0e0;</i>
+                           <a> <p class="mail">tgs.cics@ust.edu.ph</p></a>
+                        </div>
+                        <p class="desc card-text"> TGS is an Organization focused on the Gaming Community of the University of Santo Tomas.
                         </p>
                     </div>
                 </div>
@@ -127,8 +164,7 @@
     </div>
 </body>
 
-
+<?php include_once "footer.php" ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </html>
-<?php include_once "footer.php" ?>

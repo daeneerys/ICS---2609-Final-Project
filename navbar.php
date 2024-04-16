@@ -51,8 +51,8 @@
                         </li>
                     </ul>
                 </div>
-                <a href="addapplicant.php">
-                    <button class="rounded-pill">LOGIN</button>
+                <a href="login.php">
+                        <button class="rounded-pill">LOGIN</button>
                 </a>
             </div>
         </nav>

@@ -25,10 +25,6 @@ html, body {
     margin: 0;
 }
 
-.row {
-    --bs-gutter-x: 0 !important;
-}
-
 .col-md-2 {
     height: 210px;
     display: flex;

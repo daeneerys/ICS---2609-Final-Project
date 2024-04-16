@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -8,7 +10,7 @@ html {
     margin:auto;
     flex-wrap: nowrap;
 }
-.row{
+.row_organization{
     justify-content:center;
     display: flex;
     width: auto;
@@ -28,7 +30,6 @@ html {
     float: left;
     margin-left: 50px;
     margin-right: -100px;
-
     display: flex;
     flex: 0 1 200px;
     
@@ -45,30 +46,33 @@ html {
     font-family: 'Inter';
     margin-top: -5px;
 }
-/*Course Time*/
-.time_container{
+/*Organization Facebook*/
+.facebook_container{
     display: flex;
     justify-content: center;
 }
-.time_container i{
+.facebook_container i{
     margin-top: 0;
     color: #808080
 }
-.time{
+.facebook{
     margin-top: -3px;
     color: #808080
 }
-/*Course Money*/
-.money_container{
+.facebook_container a{
+    text-decoration: none;
+}
+/*Organization Mail*/
+.mail_container{
     margin-top: -8px;
     display: flex;
     justify-content: center;
 }
-.money_container i{
+.mail_container i{
     margin-top: 0;
     color: #808080
 }
-.money{
+.mail{
     margin-top: -3px;
     color: #808080
 }
@@ -88,14 +92,5 @@ html {
 .col-md-4 {
     --bs-gutter-x: 0px;
     --bs-gutter-y: 0;
-
-}
-
-.col-md-6 {
-    --bs-gutter-x: 0px;
-    --bs-gutter-y: 0;
-    justify-content: center;
-    margin-right: -100px;
-    margin-left: -80px;
 
 }
