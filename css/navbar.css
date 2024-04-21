@@ -7,16 +7,19 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    margin-top: 150px;
+    padding: 0;
+    overflow-x: hidden !important;
+
 }
 
 
 /* Upper Left Navbar*/
 .upper_left{
     background-color: #510400;
-    width: 160%;
+    width: 100% !important;
     height: 40px;
-    margin: -17px -15px 0 -15px;
+    margin: -17px -15px 0 -15px;    
+    overflow: hidden !important;
 }
 
 .left_content{
@@ -50,7 +53,7 @@ body{
     background-color: #F8F0C6;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     margin-right: -20px !important;
-    margin-bottom: -4px !important;
+    margin-bottom: 10px !important;
     margin-left: 0px !important;
     width: 120%;
     overflow: hidden;

@@ -1,4 +1,5 @@
-<?php include_once "navbar.php"?>
+<?php include "navbar.php";     
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +29,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
     var timestamp = '<?= time(); ?>';
-
     function updateTime() {
         $('#time').html(Date(timestamp));
         timestamp++;

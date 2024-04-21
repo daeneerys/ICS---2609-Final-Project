@@ -1,4 +1,5 @@
-<?php include_once ('header.php')?>
+<?php include_once ('header.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,19 +78,19 @@
         <div class="row">
             <div class="col-md-4 mx-2 mb-3 img-container">
                 <!-- Column 1 -->
-                <a href="courses.php">
+                <a href="organization.php">
                     <img class=" img-fluid" src="./assets/Cnag.jpg" alt="First Featured Photo">
                 </a>
             </div>
             <div class="col-md-4 mx-2 mb-3 img-container">
                 <!-- Column 2 -->
-                <a href="courses.php">
+                <a href="organization.php">
                     <img class=" img-fluid" src="./assets/Tgs.jpg" alt="Second Featured Photo">
                 </a>
             </div>
             <div class="col-md-4 mb-2 mb-3 img-container">
                 <!-- Column 3 -->
-                <a href="courses.php">
+                <a href="organization.php">
                     <img class=" img-fluid" src="./assets/Site.jpg" alt="Third Featured Photo">
                 </a>
             </div>

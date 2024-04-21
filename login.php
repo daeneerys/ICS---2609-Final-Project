@@ -1,12 +1,16 @@
 <?php
-$_SESSION['user_logged_in'] = false;
 $is_invalid = false;
 
-if (isset($_POST["login"])){
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+if (isset($_POST["login"])) {
     $conn = require __DIR__ . "/accounts.php";
     $email = $_POST["email"];
     $pass = $_POST["pass"];
-    
+
     require_once "accounts.php";
     $stmt = $conn->prepare("SELECT * FROM account WHERE email = '$email'");
 
@@ -17,20 +21,22 @@ if (isset($_POST["login"])){
 
         if (password_verify($_POST["pass"], $user["pass"])) {
 
-            session_start();
-            
             session_regenerate_id();
-            
-            $_SESSION["user_id"] = $user["id"];
+
+            $_SESSION['user'] = $user['id'];
+            $_SESSION['firstname'] = $user['firstname'];
+            $_SESSION['lastname'] = $user['lastname'];
+            $_SESSION['sex'] = $user['sex'];
+             $_SESSION['email'] = $user['email'];
+            $_SESSION['studentid'] = $user['studentid'];
 
             header("Location: index.php");
-            die();
         } else {
             echo "<div class = 'alert alert-danger'>Invalid Password</div>";
         }
 
         $is_invalid = true;
-    }else {
+    } else {
         echo "<div class = 'alert alert-danger'>Invalid Email</div>";
     }
 }
@@ -59,18 +65,20 @@ if (isset($_POST["login"])){
         <div class="col-6 col-md-6 login_second">
             <div class="login_second_child">
                 <div class="form-group">
-                    <form method = "post"  >
+                    <form method="post">
                         <p class="loginLabel">Email: </p>
-                        <input class="loginField" type="email" name="email"  placeholder="Email Address" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+                        <input class="loginField" type="email" name="email" placeholder="Email Address" value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
                         <p class="loginLabel">Password: </p>
                         <input class="loginField" type="password" name="pass" placeholder="Enter Your Password" required>
-                        
+
                 </div>
             </div>
             <button class="submit" type="submit" name="login">Login</button>
-            <p class = "noAcc">Don't Have an Account? <a href= "register.php">Create One</a></p>
+            <p class="noAcc">Don't Have an Account? <a href="register.php">Create One</a></p>
             </form>
         </div>
+
+        
     </div>
 </body>
 

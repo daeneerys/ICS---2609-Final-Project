@@ -5,7 +5,7 @@
 <head>
     <html lang="en">
 
-    <link rel="stylesheet" href="./css/organization.css">
+    <link rel="stylesheet" href="css/organization.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -19,7 +19,7 @@
     <div class="main_container container-fluid">
         <div class="row row_organization">
             <div class="col col-md-4">
-                <div class="card">
+                <div class=" card">
                     <img class="card_img" src="assets/Cnag.jpg" class="card-img-top" alt="CNAG">
                     <div class="card-body">
                         <h5 class="title card-title">UST CNAG - CICS </h5>
@@ -35,6 +35,7 @@
                         </div>
                         <p class="desc card-text"> UST CNAG-CICS is the Official Cisco Organization for the College of Information & Computing Sciences.
                         </p>
+                        <button class="apply_button">Apply</button>
                     </div>
                 </div>
             </div>
@@ -56,6 +57,7 @@
                         </div>
                         <p class="desc card-text">The UST ICS COMELEC is a governing body that promotes honest and clean election-related matters in the Institute of Information and Computing Sciences.
                         </p>
+                        <button class="apply_button">Apply</button>
                     </div>
                 </div>
             </div>
@@ -71,14 +73,17 @@
                             <a href="https://www.facebook.com/USTCSS">
                                 <p class="facebook">CSS</p>
                             </a>
+
                         </div>
                         <div class=mail_container>
                             <i class="fa" style="font-size:18px">&#xf0e0;</i>
                             <p class="mail">css.cics@ust.edu.ph</p>
                         </div>
-                        <p class="desc card-text">The UST Computer Science Society (UST-CSS) is the mother and academic organization of the department of computer science of UST-CICS. 
+                        <p class="desc card-text">The UST Computer Science Society (UST-CSS) is the mother and academic organization of the department of computer science of UST-CICS.
                         </p>
+                        <button class="apply_button">Apply</button>
                     </div>
+
                 </div>
             </div>
 
@@ -91,7 +96,9 @@
                         <h5 class="title card-title">UST - Information Systems Society </h5>
                         <div class=facebook_container>
                             <i style="font-size:18px" class="fa">&#xf230;</i>
-                            <a href = "https://www.facebook.com/UST.ISSociety"><p class="facebook">ISS</p></a>
+                            <a href="https://www.facebook.com/UST.ISSociety">
+                                <p class="facebook">ISS</p>
+                            </a>
                         </div>
                         <div class=mail_container>
                             <i class="fa" style="font-size:18px">&#xf0e0;</i>
@@ -99,7 +106,9 @@
                         </div>
                         <p class="desc card-text">An academic organization for students taking up Information Systems in the University of Santo Tomas. ISS is dedicated in the dissemination of knowledge and enhancing the talents of its members.
                         </p>
+                        <button class="apply_button">Apply</button>
                     </div>
+
                 </div>
             </div>
 
@@ -110,7 +119,9 @@
                         <h5 class="title card-title">UST Pax Romana - ICS Unit </h5>
                         <div class=facebook_container>
                             <i style="font-size:18px" class="fa">&#xf230;</i>
-                            <a href = "https://www.facebook.com/paxromanaiics"><p class="facebook">Pax Romana</p></a>
+                            <a href="https://www.facebook.com/paxromanaiics">
+                                <p class="facebook">Pax Romana</p>
+                            </a>
                         </div>
                         <div class=mail_container>
                             <i class="fa" style="font-size:18px">&#xf0e0;</i>
@@ -118,6 +129,7 @@
                         </div>
                         <p class="desc card-text"> The UST PAX ROMANA is a religous organization.
                         </p>
+                        <button class = "apply_button">Apply</button>
                     </div>
                 </div>
             </div>
@@ -126,10 +138,12 @@
                 <div class="card">
                     <img class="card_img" src="assets/Site.jpg" class="card-img-top" alt="Site">
                     <div class="card-body">
-                        <h5 class="title card-title">UST SITE - CICS: Society of Information Technology Enthusiasts  </h5>
+                        <h5 class="title card-title">UST SITE - CICS: Society of Information Technology Enthusiasts </h5>
                         <div class=facebook_container>
                             <i style="font-size:18px" class="fa">&#xf230;</i>
-                            <a href = "https://www.facebook.com/site.ust"><p class="facebook">UST SITE - CICS</p></a>
+                            <a href="https://www.facebook.com/site.ust">
+                                <p class="facebook">UST SITE - CICS</p>
+                            </a>
                         </div>
                         <div class=mail_container>
                             <i class="fa" style="font-size:18px">&#xf0e0;</i>
@@ -137,6 +151,7 @@
                         </div>
                         <p class="desc card-text"> UST SITE - CICS: Society of Information Technology Enthusiasts is the mother organization of the IT students of the University of Santo Tomas.
                         </p>
+                        <button class = "apply_button">Apply</button>
                     </div>
                 </div>
             </div>
@@ -149,14 +164,19 @@
                         <h5 class="title card-title">UST Thomasian Gaming Society</h5>
                         <div class=facebook_container>
                             <i style="font-size:18px" class="fa">&#xf230;</i>
-                            <a href = "https://www.facebook.com/ThomasianGamingSociety"><p class="facebook">Thomasian Gaming Society</p></a>
+                            <a href="https://www.facebook.com/ThomasianGamingSociety">
+                                <p class="facebook">Thomasian Gaming Society</p>
+                            </a>
                         </div>
                         <div class=mail_container>
                             <i class="fa" style="font-size:18px">&#xf0e0;</i>
-                           <a> <p class="mail">tgs.cics@ust.edu.ph</p></a>
+                            <a>
+                                <p class="mail">tgs.cics@ust.edu.ph</p>
+                            </a>
                         </div>
                         <p class="desc card-text"> TGS is an Organization focused on the Gaming Community of the University of Santo Tomas.
                         </p>
+                        <button class = "apply_button">Apply</button>
                     </div>
                 </div>
             </div>

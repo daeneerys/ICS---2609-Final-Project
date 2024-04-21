@@ -1,103 +1,54 @@
-
-
 <?php
 include("header.php");
 include("connection.php");
 
 
-if (isset($_POST["submit"])) {
-    $firstname = $_POST['firstname'];
-    $middlename = $_POST['middlename'];
-    $lastname = $_POST['lastname'];
-    $email = $_POST['email'];
-    $pass = $_POST['pass'];
-    $phonenumber = $_POST['phonenumber'];
-    $sex = $_POST['sex'];
-    $birth = $_POST['birth'];
-    $degreeprogram = $_POST['degreeprogram'];
-    $passrepeat = $_POST['passrepeat'];
 
-    $password_hash = password_hash($_POST["pass"], PASSWORD_DEFAULT);
-    
-
-    $errors = array();
-
-    if (strlen($pass) < 8) {
-        array_push($errors, "Password must be at least 8 characters long");
-    }
-    if ($pass !== $passrepeat) {
-        array_push($errors, "Password don't match");
-    }
-    if (count($errors) > 0) {
-        foreach ($errors as $error) {
-            echo "<div class = 'alert alert-danger'> $error </div>";
-        }
-    }else{  
-        
-    }
-
-    try {
-        $sql = "INSERT INTO account (firstname, middlename, lastname, email, phonenumber, pass, sex, birth, degreeprogram)
-        VALUES (:firstname, :middlename, :lastname, :email, :phonenumber, :pass, :sex, :birth, :degreeprogram)";
-
-
-
-
-        $stmt->execute();
-    } catch (PDOException $e) {
-        echo $sql . "<br>" . $e->getMessage();
-    }
-    $conn = null;
-}
 ?>
 
 <!DOCTYPE html>
 
-<script>    
-        document.addEventListener("DOMContentLoaded", function() {
-            const validation = new JustValidate("#signup");
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const validation = new JustValidate("#signup");
 
-            validation
-                .addField("#email", [
-                    {
-                        rule: "required"
+        validation
+            .addField("#email", [{
+                    rule: "required"
+                },
+                {
+                    rule: "email"
+                },
+                {
+                    validator: (value) => () => {
+                        return fetch("validate-email.php?email=" + encodeURIComponent(value))
+                            .then(function(response) {
+                                return response.json();
+                            })
+                            .then(function(json) {
+                                return json.available;
+                            });
                     },
-                    {
-                        rule: "email"
-                    },
-                    {
-                        validator: (value) => () => {
-                            return fetch("validate-email.php?email=" + encodeURIComponent(value))
-                                .then(function(response) {
-                                    return response.json();
-                                })
-                                .then(function(json) {
-                                    return json.available;
-                                });
-                        },
-                        errorMessage: "email already taken"
-                    }
-                ])
-                .addField("#password", [
-                    {
-                        rule: "required"
-                    },
-                    {
-                        rule: "password"
-                    }
-                ])
-                .addField("#password_confirmation", [
-                    {
-                        validator: (value, fields) => {
-                            return value === fields["#password"].elem.value;
-                        },
-                        errorMessage: "Passwords should match"
-                    }
-                ])
-                .onSuccess((event) => {
-                    document.getElementById("signup").submit();
-                });
-        });
+                    errorMessage: "email already taken"
+                }
+            ])
+            .addField("#password", [{
+                    rule: "required"
+                },
+                {
+                    rule: "password"
+                }
+            ])
+            .addField("#password_confirmation", [{
+                validator: (value, fields) => {
+                    return value === fields["#password"].elem.value;
+                },
+                errorMessage: "Passwords should match"
+            }])
+            .onSuccess((event) => {
+                document.getElementById("signup").submit();
+            });
+    });
 </script>
 
 <html lang="en">
@@ -126,10 +77,12 @@ if (isset($_POST["submit"])) {
         <h3 class="regtext text-start">Account Registration</h3>
 
         <!-- Form -->
-        <form method="post" action = "reg_process.php" id = "register" novalidate>
+        <form method="post" action="reg_process.php" id="register" novalidate>
 
             <div class="row">
                 <div class="">
+                    <p class="form_title" for="studentid">Student Id: </p><br>
+                    <input class="formField" type="text" id="studentid" name="studentid" placeholder="Enter Your Student Id" required>
                     <p class="form_title" for="firstname">First Name: </p><br>
                     <input class="formField" type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" required>
                     <br>
@@ -155,7 +108,7 @@ if (isset($_POST["submit"])) {
                     <input class="formField" type="password" id="pass" name="pass" placeholder="Enter Your Password" minlength="8" required>
 
                     <p class="form_title" for="passrepeat">Retype Password: </p><br>
-                    <input class="formField" type="password" id="passrepeat" name="passrepeat" placeholder="Enter Your Password Again" minlength="8" required>
+                    <input class="formField" type="password" id="password_confirmation" name="password_confirmation" placeholder="Enter Your Password Again" minlength="8" required>
                 </div>
             </div> <!--end of row-->
 

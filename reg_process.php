@@ -12,8 +12,8 @@ $password_hash = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
 $mysqli = require __DIR__ . "/accounts.php";
 
-$sql = "INSERT INTO account (firstname, middlename, lastname, email, phonenumber, pass, sex, birth, degreeprogram)
-VALUES (:firstname, :middlename, :lastname, :email, :phonenumber, :password_hash, :sex, :birth, :degreeprogram)";
+$sql = "INSERT INTO account (studentid, firstname, middlename, lastname, email, phonenumber, pass, sex, birth, degreeprogram)
+VALUES (:studentid, :firstname, :middlename, :lastname, :email, :phonenumber, :password_hash, :sex, :birth, :degreeprogram)";
 
 $stmt = $mysqli->prepare($sql);
 
@@ -21,6 +21,7 @@ if (!$stmt) {
     die("SQL error: " . $mysqli->errorInfo());
 }
 
+$stmt->bindParam('studentid',$_POST["studentid"]);
 $stmt->bindParam('firstname', $_POST["firstname"]);
 $stmt->bindParam('middlename', $_POST["middlename"]);
 $stmt->bindParam('lastname', $_POST["lastname"]);
