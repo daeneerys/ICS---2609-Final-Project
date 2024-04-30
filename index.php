@@ -15,55 +15,61 @@
 
     <script src="index.js" defer></script>
 
-</head>
+</head> 
 
 <body>
     <!--carousel fade -->
-    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/main0.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/main2.png" class="d-block w-100" alt="...">
-            </div>
+<div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/CICSWEEK1.JPG" class="d-block w-100" alt="...">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+            <img src="./assets/CICSWEEK2.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/CICSWEEK3.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/CICSWEEK4.JPG" class="d-block w-100" alt="...">
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-    <!-- red container -->
-    <div class="container-fluid redcontainer">
-        <!-- 4 containers -->
-        <div class="row">
-            <div class="col-md-3 mx-5 mb-3">
-                <!-- Column 1 -->
-                <br><img src="./index-img/award.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>1</h5>
-            </div>
-            <div class="col-md-3 mx-4 mb-3">
-                <!-- Column 2 -->
-                <br><img src="./index-img/abroad.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>2</h5>
-            </div>
-            <div class="col-md-3 mx-4 mb-3">
-                <!-- Column 3 -->
-                <br><img src="./index-img/local.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>3</h5>
-            </div>
-            <div class="col-md-3 mx-5 mb-3">
-                <!-- Column 4 -->
-                <br><img src="./index-img/people.png" class="img" alt="...">
-                <h5 class="accentText text-center"><br>4</h5>
-            </div>
+
+
+<!-- red container -->
+<div class="container-fluid redcontainer">
+    <!-- 4 containers -->
+    <div class="row">
+        <div class="col-md-3 mx-5 mb-3">
+            <!-- Column 1 -->
+            <br><img src="./assets/stat1.png" class="img-fluid uniform-img" alt="...">
+        </div>
+        <div class="col-md-3 mx-5 mb-3">
+            <!-- Column 2 -->
+            <br><img src="./assets/stat2.png" class="img-fluid uniform-img" alt="...">
+        </div>
+        <div class="col-md-3 mx-5 mb-3">
+            <!-- Column 3 -->
+            <br><img src="./assets/stat3.png" class="img-fluid uniform-img" alt="...">
+        </div>
+        <div class="col-md-3 mx-5 mb-3">
+            <!-- Column 4 -->
+            <br><img src="./assets/stat4.png" class="img-fluid uniform-img" alt="...">
         </div>
     </div>
+</div>
+
+
 
     <div class="container-fluid text-center">
         <div class="row">
@@ -75,32 +81,57 @@
 
     <!-- Featured Organizations Pictures-->
     <div class="container-md text-center" id='featured'>
-        <div class="row">
-            <div class="col-md-4 mx-2 mb-3 img-container">
-                <!-- Column 1 -->
-                <a href="organization.php">
-                    <img class=" img-fluid" src="./assets/Cnag.jpg" alt="First Featured Photo">
-                </a>
-            </div>
-            <div class="col-md-4 mx-2 mb-3 img-container">
-                <!-- Column 2 -->
-                <a href="organization.php">
-                    <img class=" img-fluid" src="./assets/Tgs.jpg" alt="Second Featured Photo">
-                </a>
-            </div>
-            <div class="col-md-4 mb-2 mb-3 img-container">
-                <!-- Column 3 -->
-                <a href="organization.php">
-                    <img class=" img-fluid" src="./assets/Site.jpg" alt="Third Featured Photo">
-                </a>
-            </div>
+    <div class="row">
+        <div class="col-md-4 mx-2 mb-3 img-container">
+            <!-- Column 1 -->
+            <a href="organization.php">
+                <div class="image-wrapper">
+                    <img class="img-fluid" src="./assets/Cnag.jpg" alt="First Featured Photo">
+                    <div class="overlay">
+                        <p class="overlay-text">UST Cisco Networking Academy Gateway - CICS Unit</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mx-2 mb-3 img-container">
+            <!-- Column 2 -->
+            <a href="organization.php">
+                <div class="image-wrapper">
+                    <img class="img-fluid" src="./assets/Tgs.jpg" alt="Second Featured Photo">
+                    <div class="overlay">
+                        <p class="overlay-text"> UST Thomasian Gaming Society</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 mb-2 mb-3 img-container">
+            <!-- Column 3 -->
+            <a href="organization.php">
+                <div class="image-wrapper">
+                    <img class="img-fluid" src="./assets/Site.jpg" alt="Third Featured Photo">
+                    <div class="overlay">
+                        <p class="overlay-text">UST Society of Information Technology Enthusiasts</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
+</div>
+
     <br>
 
     <!--Mission & Vision -->
     <div class="container-fluid text-center">
-        <br><br><img src="./assets/test-img.png" class="img-fluid" alt="...">
+        <div class="row">
+            <div class="col-md-6">
+            <h1 class="featuredText"><br><br>Vision</h1>
+            <p>The Institute of Information and Computing Sciences envisions itself as a premier and innovative institution in Information Technology Education and research in the Asia-Pacific Region.</p>
+        </div>
+        <div class="col-md-6">
+            <h1 class="featuredText"><br><br>Mission</h1>
+            <p>The Institute of Information and Computing Sciences of the University of Santo Tomas, under the inspiration of its model, Saint Thomas Aquinas, and its patron, Saint Vincent Ferrer, declares its commitment to the pursuit of truth and the formation of technically competent ITE professionals endowed with a strong commitment to lifelong learning, social responsibility and a desire for leadership in the spirit of service in their respective fields of specialization.</p>
+        </div>
+        </div>
     </div>
 
     <!--Location -->
