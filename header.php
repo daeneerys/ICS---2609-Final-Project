@@ -16,15 +16,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
-<body>
-    <div class="header_div">
-        <a href="https://www.ust.edu.ph/information-and-computing-sciences/">
-            <img src="assets/logoustb.png">
-        </a>
-        <p id=time></p>
-    </div>
-</body>
-
 <!--Time Script-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">

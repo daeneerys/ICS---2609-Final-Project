@@ -28,13 +28,25 @@
         <nav class="navbar navbar-expand-sm box-shadow fixed-top">
             <div class="upper_left container-fluid">
                 <div class="left_content">
-                    <i style="font-size:20px" class="fa">&#xf0f7</i>
-                    <p class="collegeName">University of Santo Tomas</p>
-                    <i style="font-size:20px" class="fa">&#xf0e0;</i>
-                    <p class="email">studentorganization.cics@ust.edu.ph</p>
                 </div>
             </div>
         </nav>
+
+        <!-- Upper Right Navbar -->
+
+        <div class="upper_right container-fluid">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var timestamp = '<?= time(); ?>';
+            function updateTime() {
+                $('#time').html(Date(timestamp));
+                timestamp++;
+            }
+            $(function() {
+                setInterval(updateTime, 1000); // Adjust interval as needed (e.g., every second)
+            });
+        </script>
+        </div>
 
         <!-- Lower Navbar -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm mt-2 fixed-top" id='navbar'>
